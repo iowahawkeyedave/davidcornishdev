@@ -1,0 +1,121 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Home - David Cornish - Iowa Based Web Developer" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Hi, I'm David Cornish</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Highly motivated web developer with a strong
+background in management information systems.
+Skilled in HTML, CSS, JavaScript, Bootstrap, and CMS
+platforms including WordPress, Drupal, Joomla, and
+Elementor. Proven expertise in technical support and a
+track record of successful ownership. Seeking a
+challenging role as a web developer to apply and
+develop my skills, and push innovation.
+  </div>
+  <div>
+    <a href="resume/David-Cornish-Resume-December2023.pdf" class="text-blue-500 underline hover:text-rose-500 duration-300">
+        Download Resume PDF
+        <i class="fa-solid fa-file-arrow-down ml-2"></i>
+    </a>
+</div>
+<br>
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Bellevue University - Master of Science in Management Information Systems"
+      subtitle="2008 - 2009"
+    />
+    <TimeLineElement
+      title="Mount Mercy College - Bachelor of Science in Computer Science"
+      subtitle="2003 - 2006"
+    />
+    <TimeLineElement
+    title="Kirkwood Community College - Associate of Applied Science in PC & Internet Programming"
+    subtitle="2000 - 2003"
+  />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Owner at Hawkeye Computers"
+      subtitle="From 2003 to present"
+    >
+    Designed WordPress websites and logos, delivering
+    high-quality freelance work.<br>
+    Provided expert computer consultation services
+    and training to clients.<br>
+    Successfully resolved various computer issues,
+    including those related to viruses and spyware.
+    
+    </TimeLineElement>
+    <TimeLineElement
+      title="Senior Web Developer at Designs of the 5 Domains"
+      subtitle="From 2010 to 2012"
+    >
+    Led the development and continuous maintenance
+    of cutting-edge websites utilizing PHP and
+    Dreamweaver.<br>
+    Leveraged Joomla, WordPress, or Drupal as the
+    preferred content management system to drive
+    seamless functionality.<br>
+    Demonstrated artistic prowess by creating visually
+    captivating graphics for websites, business cards,
+    and brochures using Photoshop and Illustrator.
+    Employed MySQL to seamlessly integrate and
+    handle essential back-end databases.<br>
+    Exhibited exceptional time management and
+    achieved high client satisfaction by promptly
+    implementing website edits within assigned
+    deadlines.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Help Desk at Mount Mercy College"
+      subtitle="From 2003 to 2005"
+    >
+    Provided assistance and support to students and faculty members regarding computer-related
+    inquiries, both in-person and over the phone.<br>
+    Maintained and managed the functionality of
+    computer lab printers, scanners, and computers.<br>
+    Offered technical support for Microsoft Office
+    applications, encompassing Microsoft Word, Excel,
+    and PowerPoint.<br>
+    Demonstrated meticulousness by accurately
+    logging technical support issues into Track-It
+    program and effectively escalating them to the
+    relevant technical support personnel.
+
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>WordPress</li>
+    <li>Astro</li>
+    <li>Elementor</li>
+    <li>Drupal</li>
+    <li>Joomla</li>
+    <li>Bootstrap</li>
+    <li>TypeScript</li>
+  </ul>
+
+</div>
+</BaseLayout>
