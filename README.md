@@ -1,7 +1,5 @@
 # David Cornish - Personal Portfolio Website
 
-![Portfolio Website](public/social_img.webp)
-
 A modern, responsive portfolio website showcasing my web development expertise and professional experience. Built with cutting-edge technologies for optimal performance and user experience.
 
 ## 🚀 Live Demo
