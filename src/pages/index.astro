@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
+import Analytics from '@vercel/analytics/astro'
 ---
 
 <BaseLayout 
@@ -19,7 +20,8 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
  innovative solutions, and complete projects within tight deadlines.
   </div>
   <div>
-    <a href="resume/David_Cornish_Resume.pdf" class="text-blue-500 underline hover:text-rose-500 duration-300">
+    <a href="http://www.davidcornish.dev/resume/David_Cornish_Resume.pdf" class="text-blue-500 underline hover:text-rose-500 duration-300">
+
         Download Resume PDF
         <i class="fa-solid fa-file-arrow-down ml-2"></i>
     </a>
@@ -120,4 +122,5 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </ul>
 
 </div>
+<Analytics />
 </BaseLayout>
