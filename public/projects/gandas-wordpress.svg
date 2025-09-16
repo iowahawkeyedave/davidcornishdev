@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Ganda's WordPress site screenshot illustration</title>
+  <desc id="desc">Warm orange gradient with storefront elements for the Ganda's website</desc>
+  <defs>
+    <linearGradient id="sunset" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F97316" />
+      <stop offset="100%" stop-color="#DB2777" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#sunset)" />
+  <g fill="#FB923C" opacity="0.35">
+    <circle cx="1040" cy="120" r="180" />
+    <circle cx="160" cy="560" r="220" />
+  </g>
+  <g transform="translate(200 130)" fill="#FFF7ED">
+    <rect width="800" height="420" rx="28" fill="rgba(255,255,255,0.92)" />
+    <rect x="0" y="0" width="800" height="96" rx="28" fill="#7C3AED" />
+    <circle cx="70" cy="48" r="14" fill="#FEE2E2" />
+    <circle cx="110" cy="48" r="14" fill="#FECACA" />
+    <circle cx="150" cy="48" r="14" fill="#FCA5A5" />
+    <rect x="220" y="32" width="360" height="32" rx="16" fill="#C4B5FD" />
+    <rect x="80" y="140" width="640" height="72" rx="18" fill="#FDBA74" />
+    <rect x="80" y="250" width="260" height="120" rx="18" fill="#F87171" />
+    <rect x="400" y="250" width="260" height="120" rx="18" fill="#FDE68A" />
+    <text x="400" y="360" fill="#7C3AED" text-anchor="middle" font-size="56" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700">Ganda's</text>
+    <text x="400" y="404" fill="#7C3AED" text-anchor="middle" font-size="28" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">WordPress storefront</text>
+  </g>
+</svg>

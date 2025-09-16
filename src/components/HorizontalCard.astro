@@ -2,6 +2,7 @@
 const { title, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
 import { Image } from "astro:assets";
 const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
+const isSvg = typeof img === "string" && img.endsWith(".svg");
 ---
 
 <div
@@ -11,14 +12,24 @@ const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
     <div class="hero-content flex-col md:flex-row">
       {
         img && (
-          <Image
-            src={img}
-            width={750}
-            height={422}
-            format="webp"
-            alt={title}
-            class="max-w-full md:max-w-[13rem] rounded-lg"
-          />
+          isSvg ? (
+            <img
+              src={img}
+              alt={title}
+              loading="lazy"
+              decoding="async"
+              class="max-w-full md:max-w-[13rem] rounded-lg"
+            />
+          ) : (
+            <Image
+              src={img}
+              width={750}
+              height={422}
+              format="webp"
+              alt={title}
+              class="max-w-full md:max-w-[13rem] rounded-lg"
+            />
+          )
         )
       }
       <div class="grow w-full">

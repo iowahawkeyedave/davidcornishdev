@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Cornish Tax website showcase artwork</title>
+  <desc id="desc">Professional blue gradient background with financial motif</desc>
+  <defs>
+    <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#blue)" />
+  <g fill="#38BDF8" opacity="0.35">
+    <path d="M180 520c80-140 180-140 260 0s180 140 260 0 180-140 260 0 180 140 260 0v60H180z" />
+  </g>
+  <g transform="translate(220 150)">
+    <rect width="760" height="380" rx="24" fill="rgba(15,23,42,0.85)" stroke="#E2E8F0" stroke-width="3" />
+    <text x="380" y="160" text-anchor="middle" font-size="60" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" fill="#E2E8F0" font-weight="600">Cornish Tax</text>
+    <text x="380" y="210" text-anchor="middle" font-size="30" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" fill="#BAE6FD">Small Business Tax Services</text>
+    <g transform="translate(120 240)">
+      <rect width="200" height="80" rx="16" fill="#2563EB" />
+      <text x="100" y="50" text-anchor="middle" font-size="28" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" fill="#F8FAFC">View Services</text>
+    </g>
+    <g transform="translate(440 240)">
+      <rect width="200" height="80" rx="16" fill="#0EA5E9" />
+      <text x="100" y="50" text-anchor="middle" font-size="28" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" fill="#0F172A">Schedule Call</text>
+    </g>
+  </g>
+</svg>

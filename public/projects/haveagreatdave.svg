@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Screenshot placeholder for haveagreatdave.dev website</title>
+  <desc id="desc">Abstract gradient background with subtle grid and project title</desc>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="url(#grad)" />
+  <rect width="1200" height="675" fill="url(#grid)" />
+  <g fill="#F8FAFC" text-anchor="middle">
+    <text x="50%" y="45%" font-size="72" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="600">haveagreatdave.dev</text>
+    <text x="50%" y="55%" font-size="32" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" opacity="0.9">Personal Portfolio &amp; Blog</text>
+  </g>
+</svg>
