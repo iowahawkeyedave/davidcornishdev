@@ -47,3 +47,66 @@ body {
     transform: translateY(-8px) translateX(6px);
   }
 }
+
+.project-hero {
+  background:
+    radial-gradient(circle at 0% 20%, hsl(var(--p) / 0.24), transparent 38%),
+    radial-gradient(circle at 100% 80%, hsl(var(--a) / 0.26), transparent 35%),
+    linear-gradient(135deg, hsl(var(--b2) / 0.9), hsl(var(--b1)));
+}
+
+.project-hero-glow {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(36px);
+  opacity: 0.4;
+  animation: heroFloat 10s ease-in-out infinite;
+}
+
+.project-hero-glow-a {
+  width: 160px;
+  height: 160px;
+  top: -45px;
+  right: -15px;
+  background: hsl(var(--p));
+}
+
+.project-hero-glow-b {
+  width: 120px;
+  height: 120px;
+  bottom: -30px;
+  left: -20px;
+  background: hsl(var(--a));
+  animation-delay: -2.5s;
+}
+
+.project-card {
+  background:
+    linear-gradient(170deg, hsl(var(--b2) / 0.8), hsl(var(--b1) / 0.95)),
+    linear-gradient(0deg, color-mix(in srgb, var(--project-accent) 14%, transparent), transparent);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--project-accent) 55%, hsl(var(--bc) / 0.3));
+  box-shadow: 0 22px 30px -24px color-mix(in srgb, var(--project-accent) 40%, transparent);
+}
+
+.project-image-wrap {
+  background: linear-gradient(135deg, hsl(var(--b3) / 0.4), hsl(var(--b2) / 0.75));
+}
+
+.project-image-placeholder {
+  background:
+    linear-gradient(135deg, hsl(var(--b2) / 0.75), hsl(var(--b1) / 0.95)),
+    repeating-linear-gradient(
+      -45deg,
+      color-mix(in srgb, var(--project-accent) 12%, transparent) 0 12px,
+      transparent 12px 24px
+    );
+}
+
+.project-visit {
+  color: color-mix(in srgb, var(--project-accent) 70%, hsl(var(--bc)));
+}
