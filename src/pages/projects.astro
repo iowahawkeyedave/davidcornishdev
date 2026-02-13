@@ -8,6 +8,7 @@ const projects = [
     img: "/projects/steam-roaster.webp",
     desc: "Interactive project deployed on Vercel with a clean, modern web experience.",
     url: "https://steam-roaster-rho.vercel.app/",
+    repo: "https://github.com/iowahawkeyedave/steam-roaster",
     badge: "New",
     stack: ["Vercel", "Frontend", "Responsive UI"],
     accent: "#34d399",
@@ -26,6 +27,7 @@ const projects = [
     img: "/projects/haveagreatdave.svg",
     desc: "Created this current website using HTML, Astro, and Tailwind CSS.",
     url: "https://haveagreatdave.dev/",
+    repo: "https://github.com/iowahawkeyedave/davidcornishdev",
     badge: "Personal",
     stack: ["Astro", "Tailwind", "Content Design"],
     accent: "#22c55e",
@@ -35,6 +37,7 @@ const projects = [
     img: "/projects/tempest-weather-dashboard.webp",
     desc: "Built a weather widget powered by a personal weather station and TempestWx API data.",
     url: "https://tempestweatherdashboard.onrender.com/",
+    repo: "https://github.com/iowahawkeyedave/tempestweatherdashboard",
     badge: "Utility",
     stack: ["JavaScript", "API Integration", "CSS"],
     accent: "#38bdf8",
@@ -81,33 +84,36 @@ const projects = [
         const isSvg = hasImage && project.img.endsWith(".svg");
         return (
           <article class="project-card rounded-2xl border border-base-content/10 overflow-hidden" style={`--project-accent: ${project.accent}`}>
-            <a href={project.url} target="_blank" rel="noopener noreferrer" class="block h-full">
-              <div class="p-5 pb-0">
-                <div class="flex items-center justify-between gap-3 mb-4">
-                  <span class="badge badge-neutral">{project.badge}</span>
-                  <span class="project-visit text-sm font-semibold">Visit Project</span>
-                </div>
-                <h2 class="text-2xl font-bold mb-2">{project.title}</h2>
-                <p class="mb-4">{project.desc}</p>
+            <div class="p-5 pb-0">
+              <div class="flex items-center justify-between gap-3 mb-4">
+                <span class="badge badge-neutral">{project.badge}</span>
               </div>
+              <h2 class="text-2xl font-bold mb-2">{project.title}</h2>
+              <p class="mb-4">{project.desc}</p>
+            </div>
 
-              <div class="px-5 pb-5">
-                <div class="project-image-wrap rounded-xl border border-base-content/10 p-3 mb-4">
-                  {!hasImage ? (
-                    <div class="project-image-placeholder h-44 rounded-md flex items-center justify-center">
-                      <span class="badge badge-ghost">Screenshot Coming Soon</span>
-                    </div>
-                  ) : isSvg ? (
-                    <img src={project.img} alt={project.title} loading="lazy" decoding="async" class="w-full h-44 object-contain" />
-                  ) : (
-                    <Image src={project.img} width={750} height={422} format="webp" alt={project.title} class="w-full h-44 object-cover rounded-md" />
-                  )}
-                </div>
-                <div class="flex flex-wrap gap-2">
-                  {project.stack.map((item) => <span class="badge badge-outline">{item}</span>)}
-                </div>
+            <div class="px-5 pb-5">
+              <div class="project-image-wrap rounded-xl border border-base-content/10 p-3 mb-4">
+                {!hasImage ? (
+                  <div class="project-image-placeholder h-44 rounded-md flex items-center justify-center">
+                    <span class="badge badge-ghost">Screenshot Coming Soon</span>
+                  </div>
+                ) : isSvg ? (
+                  <img src={project.img} alt={project.title} loading="lazy" decoding="async" class="w-full h-44 object-contain" />
+                ) : (
+                  <Image src={project.img} width={750} height={422} format="webp" alt={project.title} class="w-full h-44 object-cover rounded-md" />
+                )}
               </div>
-            </a>
+              <div class="flex flex-wrap gap-2 mb-4">
+                {project.stack.map((item) => <span class="badge badge-outline">{item}</span>)}
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <a href={project.url} target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Visit Project</a>
+                {project.repo && (
+                  <a href={project.repo} target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">View Code</a>
+                )}
+              </div>
+            </div>
           </article>
         );
       })

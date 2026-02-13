@@ -106,7 +106,3 @@ body {
       transparent 12px 24px
     );
 }
-
-.project-visit {
-  color: color-mix(in srgb, var(--project-accent) 70%, hsl(var(--bc)));
-}
