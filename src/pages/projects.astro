@@ -1,8 +1,18 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { Image } from "astro:assets";
 
-const projects = [
+type Project = {
+  title: string;
+  img: string | null;
+  desc: string;
+  url: string;
+  repo?: string;
+  badge: string;
+  stack: string[];
+  accent: string;
+};
+
+const projects: Project[] = [
   {
     title: "Steam Roaster",
     img: "/projects/steam-roaster.webp",
@@ -101,7 +111,7 @@ const projects = [
                 ) : isSvg ? (
                   <img src={project.img} alt={project.title} loading="lazy" decoding="async" class="w-full h-44 object-contain" />
                 ) : (
-                  <Image src={project.img} width={750} height={422} format="webp" alt={project.title} class="w-full h-44 object-cover rounded-md" />
+                  <img src={project.img} alt={project.title} loading="lazy" decoding="async" class="w-full h-44 object-cover rounded-md" />
                 )}
               </div>
               <div class="flex flex-wrap gap-2 mb-4">
