@@ -37,3 +37,25 @@
 [2m00:36:16[22m [34m[watch][39m src/pages/index.astro
 [2m00:36:16[22m [34m[watch][39m src/pages/index.astro
 [2m00:36:17[22m [34m[200][39m / [2m35ms[22m
+[2m00:38:59[22m [34m[200][39m /projects [2m4ms[22m
+[2m00:38:59[22m [34m[200][39m /cv [2m4ms[22m
+[2m00:38:59[22m [34m[200][39m /cv [2m4ms[22m
+[2m00:39:05[22m [34m[watch][39m src/components/cv/TimeLine.astro
+[2m00:39:05[22m [34m[watch][39m src/components/cv/TimeLine.astro
+[2m00:39:05[22m [34m[watch][39m src/pages/cv.astro
+[2m00:39:05[22m [34m[watch][39m src/pages/cv.astro
+[2m00:39:05[22m [34m[200][39m /cv [2m48ms[22m
+[2m00:39:12[22m [34m[200][39m /cv [2m4ms[22m
+[2m00:39:12[22m [34m[200][39m [34mHEAD[39m /cv [2m4ms[22m
+[2m00:40:16[22m [34m[watch][39m src/pages/cv.astro
+[2m00:40:16[22m [34m[watch][39m src/pages/cv.astro
+[2m00:40:16[22m [34m[200][39m /cv [2m29ms[22m
+[2m00:40:23[22m [34m[200][39m [34mHEAD[39m /cv [2m3ms[22m
+[2m00:40:30[22m [34m[200][39m /projects [2m4ms[22m
+[2m00:41:04[22m [34m[watch][39m src/pages/cv.astro
+[2m00:41:04[22m [34m[watch][39m src/pages/cv.astro
+[2m00:41:04[22m [34m[200][39m /cv [2m37ms[22m
+[2m00:43:00[22m [34m[watch][39m src/pages/cv.astro
+[2m00:43:00[22m [34m[watch][39m src/pages/cv.astro
+[2m00:43:08[22m [34m[200][39m [34mHEAD[39m /cv [2m37ms[22m
+[2m00:43:12[22m [34m[200][39m /cv [2m3ms[22m
